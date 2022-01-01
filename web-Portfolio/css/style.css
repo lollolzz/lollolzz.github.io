@@ -182,7 +182,7 @@
   
   /* Home */
   #home {
-    background: url('/web-Portfolio/img/home-background5.jpg') center/cover no-repeat;
+    background: url('web-Portfolio/img/home-background5.jpg') center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
