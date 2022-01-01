@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* flexbox가 아닐때 정렬하는 방법 */
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: beige;
+      }
+
+      .inner {
+        width: 50%;
+        height: 50%;
+        background-color: blue;
+      }
+
+      .inner1 {
+        margin: auto;
+        /* 브라우저에서 자동으로 지정해준다. 한줄에 하나식만 들어가기위한것이어서
+        수직으로는 정렬이 안된다. */
+      }
+
+      .box2 {
+        text-align: center;
+        /* 텍스트가 아니더라도 정렬이 가능하지만 div등의 아이들은 자동으로 마진이
+        적용되어 한라인에 하나밖에 들어갈수 없어서 적용이 안된다. */
+      }
+
+      .inner3 {
+        transform: translate(50%, 50%);
+        /* 움직이는 로테이션이 가능하다  */
+        /* 자식요소가 부모요소 크기의 절반 일때는 위와 같이 사용 가능
+        절반의 크기가 아니라면 
+        position: absolute;
+        top: 50%
+        left: 50% 값을 주고 
+        translate()값을 주어 센터로 맞춰주면 된다*/
+      }
+
+      .box4 h1 {
+        text-align: center;
+        line-height: 100px;
+        /* text-align는 정확히 가운데가 아니어서 line-height를 넣어주어야 정확히 중간이 된다 
+        박스의 높이만큼 line-height를 설정하여주면 정확하게 가운데로 간다 */
+
+      }
+    </style>
+  </head>
+  <body>
+    <h3>margin: auto</h3>
+    <div class="box box1">
+      <div class="inner inner1"></div>
+    </div>
+    <h3>text-align: center</h3>
+    <div class="box box2">
+      <button>Text</button>
+    </div>
+    <h3>translate(50%, 50%)</h3>
+    <div class="box box3">
+      <div class="inner inner3"></div>
+    </div>
+    <h3>Text centering</h3>
+    <div class="box box4">
+      <h1>Text<br />Text</h1>
+    </div>
+  </body>
+</html>
