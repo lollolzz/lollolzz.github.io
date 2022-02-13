@@ -182,7 +182,7 @@
   
   /* Home */
   #home {
-    background:  center/cover no-repeat url('./img/home-background1.jpg');
+    background:  center/cover no-repeat url('../img/home-background1.jpg');
     padding: 40px;
     padding-top: 120px;
     text-align: center;
